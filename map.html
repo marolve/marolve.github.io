@@ -18,15 +18,35 @@
 				padding: 0;
 				margin: 0;
 		}
-		html, body, #map {
+		html, body {
 				height: 100%;
 				width: 100vw;
+		}
+		#content {
+				height: 100%;
+				width: 100vw;
+				position: relative;
+		}
+		#title {
+			height: 24px;
+			width: 100vw;
+			position: relative;
+			text-align: center;
+			font-family: sans-serif;
+		}
+		#map {
+			height:calc(100% - 24px);
+			width: 100vw;
+			position: relative;
 		}
 	</style>
 
 </head>
 <body>
-	<div id='map'></div>
+	<div id='content'>
+		<div id='title'>Bacs de collecte des déchets alimentaires de Paris</div>
+		<div id='map'></div>
+	</div>
 	
 	<script>
 		var map;
